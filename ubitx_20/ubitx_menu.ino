@@ -13,7 +13,7 @@
 
 
 
-int menuBand(int btn){
+void menuBand(int btn){
   int knob = 0;
   int band;
   unsigned long offset;
@@ -196,7 +196,7 @@ void menuExit(int btn){
   }
 }
 
-int menuCWSpeed(int btn){
+void menuCWSpeed(int btn){
     int knob = 0;
     int wpm;
 

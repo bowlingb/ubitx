@@ -75,7 +75,7 @@ void drawMeter(int8_t needle){
 }
 
 // The generic routine to display one line on the LCD 
-void printLine(char linenmbr, char *c) {
+void printLine(const char linenmbr, const char *c) {
   if (strcmp(c, printBuff[linenmbr])) {     // only refresh the display when there was a change
     lcd.setCursor(0, linenmbr);             // place the cursor at the beginning of the selected line
     lcd.print(c);
@@ -88,11 +88,11 @@ void printLine(char linenmbr, char *c) {
 }
 
 //  short cut to print to the first line
-void printLine1(char *c){
+void printLine1(const char *c){
   printLine(1,c);
 }
 //  short cut to print to the first line
-void printLine2(char *c){
+void printLine2(const char *c){
   printLine(0,c);
 }
 
